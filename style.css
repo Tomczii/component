@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.navigation {
+  text-align: center;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0011ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  transform: translateX(-100vw);
+}
+
+.navigation__active {
+  transform: translateX(0px);
+}
+
+.navigation__list {
+  margin-top: 50px;
+  list-style: none;
+}
+
+.navigation__item {
+  margin-bottom: 20px;
+}
+.navigation__item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.bars {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-image: url(./hamburger.png);
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.5s;
+}
+.bars__close {
+  background-image: url(./close.png);
+  transform: translateX(90vw);
+}
+
+.bars:hover {
+  transition: 0.2s;
+  width: 70px;
+  height: 70px;
+}/*# sourceMappingURL=style.css.map */
